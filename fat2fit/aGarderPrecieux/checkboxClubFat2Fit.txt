@@ -1,0 +1,68 @@
+//                            function loadFitnessCustomer() {
+//                                $.ajax({
+//                                    method: 'POST',
+//                                    url: 'loadFitnessCustomerAjax.php',
+//                                    data: {},
+//                                    dataType: 'json',
+//                                    success: function (data) {
+//                                        data.forEach(function (element) {
+//                                            $('#fitClient').append('<label class="checkbox-inline"><input type="checkbox" value="' + element.idFit + '">' + element.nameFit + '</label>');
+//                                        });
+//                                    },
+//                                    error: function (jqXHR) {
+//                                        $('#fitClient').html(jqXHR.toString());
+//                                    }
+//                                });
+//                            }
+
+//                            $("#fitClient").change(function () {
+//                                $("#clubClient").html('<h5 class="checkbox-inline" style="margin: 0px; padding: 0px; color: white;">Vos Clubs :</h5>');
+//                                $("#fitClient input:checked").each(function () {
+//                                    loadClubAsFitness($(this).val());
+//                                });
+//                            });
+//
+//                            var clubClient = [];
+//
+//                            /**
+//                             * Comment
+//                             */
+//                            function loadClubAsFitness(idFit) {
+//                                $.ajax({
+//                                    method: 'POST',
+//                                    url: 'loadClubAsFitnessAjax.php',
+//                                    data: {'idFit': idFit},
+//                                    dataType: 'json',
+//                                    success: function (data) {
+//                                        data.forEach(function (element) {
+//                                            var club = {idFit: idFit, nameFit: element.nameFit, idClub: element.idClub, nameClub: element.nameClub};
+//                                            clubClient.push(club);
+//                                            $('#clubClient').append('<label class="checkbox-inline"><input type="checkbox" onclick="" value="' + element.idClub + '">' + element.nameFit + ' - ' + element.nameClub + '</label>');
+//                                        });
+//                                    },
+//                                    error: function (jqXHR) {
+//                                        $('#clubClient').html(jqXHR.toString());
+//                                    }
+//                                });
+//                            }
+//
+//                            $("#clubClient").change(function () {
+//                                $("#fitCalendar div.cours-week.col-md-1.row").empty();
+//                                $("#clubClient input:checked").each(function () {
+//                                    loadCoursFitness($(this).val());
+//                                });
+//                            });
+
+
+
+
+
+
+
+                    <!--                    <div id="AMODIF">
+                                      <h5 class="checkbox-inline" style="margin: 0px; padding: 0px; color: white;">Vos Fitness :</h5>
+                                  </div>
+              
+                                  <div id="AMODIF">
+                                      <h5 class="checkbox-inline" style="margin: 0px; padding: 0px; color: white;">Vos Clubs :</h5>
+                                  </div> -->

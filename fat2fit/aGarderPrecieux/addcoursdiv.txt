@@ -1,0 +1,3 @@
+function addCoursInDiv(data) {
+                            $("#" + data.div).append($('<div>').attr('onClick', 'addInUserPlanning("' + data.div + '","' + data.heureDebut + '","' + data.heureFin + '","' + data.nmCours + '","' + data.idCours + '","' + data.fitness + '","' + data.club + '","' + data.logoFit + '");').append($('<div class="cours-odd">').append($('<div class="col-md-12 cours-left">').append($('<div class="cours-title">').text(data.nmCours)).append($('<div class="cours-schedule">').text(data.heureDebut + " - " + data.heureFin).append($('<div class="cours-schedule">').html('<img src="img/fit/' + data.logoFit + '" width="90%" > ' + data.club + ''))))));
+                        }
